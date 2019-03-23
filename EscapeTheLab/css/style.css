@@ -1,0 +1,109 @@
+.carousel-inner > .item {
+   /* height: 46vw; */
+}
+@keyframes golr {       
+    from { left: 0px; }           
+    to { left: calc(100% - 50px); }
+  }
+  @keyframes gorl {      
+    from { left:  calc(100% - 50px); }         
+    to { left: 0px; } 
+  }
+  h2{color:#b1d8f6;
+    background-color:RGB(2,85,120,0.5);
+  }
+  .well{background-color:#070709;}
+input[type=text]{color:#069;opacity:0.85; font-family:"Courier", sans-serif;}
+input[type=password]{color:#069;opacity:0.85; font-family:"Courier", sans-serif;}
+select{opacity:0.85;font-family:"Courier", sans-serif;color:#069;}
+
+  .progress {
+    animation: golr 3s infinite alternate;
+ 
+    position: relative;
+    border: 2px solid gray;
+    width: 50px;
+    height: 20px;
+    background-color:#070709;}
+	 .progress2 {
+    animation: gorl 3s infinite alternate;
+ 
+    position: relative;
+    border: 2px solid gray;
+    width: 50px;
+    height: 20px;
+    background-color:#070709;}
+
+
+.navbar{background-color:#070709;
+  opacity:0.5;
+   border-bottom:1px ridge white;}
+#bouton{background-color:#034369; opacity:0.8;margin-left:30%;}
+#bouton:hover{background-color:#034369; opacity:1;margin-left:30%;color:white;}
+#bouton2{background-color:#034369; opacity:0.8;}
+#bouton2:hover{background-color:#034369; opacity:1;color:white;}
+.carousel-indicators{margin-bottom:70px;}
+#panel {
+  display: none;}
+.alert-danger
+{color:#f6b1e7;
+background-color:rgba(150, 120, 200, 0.5)}
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+.luminaire,.luminaire2,.luminaire3,.luminaire4,.luminaire5,.luminaire6,.luminaire7,.luminaire8,.luminaire9 {
+  position: relative;
+  display: inline-block;
+  width: 1vw;
+  height: 12vw;
+  margin: 2.5vw;
+  border-radius: 50%;
+  background-color: #000;
+  box-shadow: 0 0 1.2vw 1vw navy, 0 0 10vw 5vw #069;
+  transition: box-shadow 4s ease-out;
+  animation: spin 16s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.luminaire:hover,.luminaire2:hover,.luminaire3:hover,.luminaire4:hover,.luminaire5:hover,.luminaire6:hover,.luminaire7:hover,.luminaire8:hover,.luminaire9:hover  {
+  cursor: pointer;
+}
+
+.luminaire::before, .luminaire::after, .luminaire2::before, .luminaire2::after, .luminaire3::before, .luminaire3::after,.luminaire4::before,.luminaire4::after,.luminaire5::before,.luminaire5::after,.luminaire6::before,.luminaire6::after,.luminaire7::before,.luminaire7::after,.luminaire8::before,.luminaire8::after,.luminaire9::before,.luminaire9::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 1.3vw 0.7vw red, 0 0 3vw 1.5vw rgb(76, 0, 255);
+  opacity: 0;
+  transition: opacity 8s, transform 8s;
+}
+
+.on {
+  background-color: #fff;
+  box-shadow: 0 0 2.5vw 1.3vw #fff, 0 0 12vw 3vw darkred;
+}
+
+.on::before {
+  transform: translateX(-6vw);
+  opacity: 1;
+}
+
+.on::after {
+  transform: translateX(6vw);
+  opacity: 1;
+}

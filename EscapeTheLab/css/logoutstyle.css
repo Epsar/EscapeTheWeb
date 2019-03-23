@@ -1,0 +1,168 @@
+.Gameover {
+    font-family: 'Varela', sans-serif;
+    font-size: 120px;
+    color: rgb(248, 244, 244);
+    position: absolute;
+    /* background: black; */
+  }
+  
+  @keyframes Gameover-anim-1 {
+    0% {
+      clip: rect(76px, 1105px, 81px, 0px);
+    }
+    6.6666666667% {
+      clip: rect(105px, 1105px, 73px, 0px);
+    }
+    13.3333333333% {
+      clip: rect(111px, 1105px, 106px, 0px);
+    }
+    20% {
+      clip: rect(24px, 1105px, 58px, 0px);
+    }
+    26.6666666667% {
+      clip: rect(45px, 1105px, 61px, 0px);
+    }
+    33.3333333333% {
+      clip: rect(23px, 1105px, 66px, 0px);
+    }
+    40% {
+      clip: rect(111px, 1105px, 65px, 0px);
+    }
+    46.6666666667% {
+      clip: rect(36px, 1105px, 7px, 0px);
+    }
+    53.3333333333% {
+      clip: rect(47px, 1105px, 62px, 0px);
+    }
+    60% {
+      clip: rect(60px, 1105px, 74px, 0px);
+    }
+    66.6666666667% {
+      clip: rect(76px, 1105px, 77px, 0px);
+    }
+    73.3333333333% {
+      clip: rect(40px, 1105px, 8px, 0px);
+    }
+    80% {
+      clip: rect(51px, 1105px, 1px, 0px);
+    }
+    86.6666666667% {
+      clip: rect(5px, 1105px, 30px, 0px);
+    }
+    93.3333333333% {
+      clip: rect(101px, 1105px, 113px, 0px);
+    }
+    100% {
+      clip: rect(53px, 1105px, 9px, 0px);
+    }
+  }
+  @keyframes Gameover-anim-2 {
+    0% {
+      clip: rect(69px, 1105px, 72px, 0px);
+    }
+    6.6666666667% {
+      clip: rect(40px, 1105px, 59px, 0px);
+    }
+    13.3333333333% {
+      clip: rect(64px, 1105px, 33px, 0px);
+    }
+    20% {
+      clip: rect(51px, 1105px, 81px, 0px);
+    }
+    26.6666666667% {
+      clip: rect(95px, 1105px, 60px, 0px);
+    }
+    33.3333333333% {
+      clip: rect(41px, 1105px, 101px, 0px);
+    }
+    40% {
+      clip: rect(21px, 1105px, 87px, 0px);
+    }
+    46.6666666667% {
+      clip: rect(44px, 1105px, 66px, 0px);
+    }
+    53.3333333333% {
+      clip: rect(37px, 1105px, 93px, 0px);
+    }
+    60% {
+      clip: rect(28px, 1105px, 23px, 0px);
+    }
+    66.6666666667% {
+      clip: rect(109px, 1105px, 53px, 0px);
+    }
+    73.3333333333% {
+      clip: rect(109px, 1105px, 22px, 0px);
+    }
+    80% {
+      clip: rect(11px, 1105px, 31px, 0px);
+    }
+    86.6666666667% {
+      clip: rect(52px, 1105px, 45px, 0px);
+    }
+    93.3333333333% {
+      clip: rect(110px, 1105px, 38px, 0px);
+    }
+    100% {
+      clip: rect(80px, 1105px, 27px, 0px);
+    }
+  }
+  .Gameover:before, .Gameover:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: black; */
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .Gameover:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: Gameover-anim-1 2s infinite linear alternate-reverse;
+  }
+  
+  .Gameover:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: Gameover-anim-2 3s infinite linear alternate-reverse;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+
+  .bodylogout
+  {
+    background-color: #070709;
+    /* The image used */
+    background-image: url("../images/gameover3.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /* .navbar{
+    border: static; 
+    border-bottom-color: rgb(175, 197, 197);
+  } */
+
+  .annonce{
+    color: rgb(250, 246, 246) ;
+  }
+
+  .row1{
+    margin-top: 140px;
+  }
+
+  .row2{
+    margin-top: 210px;
+  }
+
