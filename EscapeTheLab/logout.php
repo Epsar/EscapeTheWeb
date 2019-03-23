@@ -4,6 +4,7 @@
 
 <?php 
         session_start();
+        include_once("includes/connectbdd.php");
     ?>
 
 <head>
@@ -23,7 +24,7 @@
                 <a class="navbar-brand" style="color : white">Charly's Escape</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php" style="color : white">Retour vers l'accueil</a></li>
+                <li><a href="index.php">Retour vers l'accueil</a></li>
             </ul>
         </div>
     </nav>
@@ -49,7 +50,7 @@
                     print "$level"; 
                     ?>
                 </p>
-                <p class="text-center annonce"> Votre partie a durée :
+                <p class="text-center annonce"> Votre partie a duré :
                     <?php    
                     $duree = time()-$_SESSION['_connexiontime'];
                     $yourtime = $bdd -> prepare("UPDATE SESSION SET duree = ? WHERE id = ?");
@@ -67,6 +68,7 @@
                     session_destroy();
                     ?>
                 </p>
+                <p> <?php include("includes/adminfunctions.php"); ?></p>
             </div>
         </section>
     </div>
