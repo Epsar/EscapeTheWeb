@@ -24,9 +24,14 @@
                 {
                     redirect("pageadmin.php");
                 }
+                 
+            
             }
+    
             
         }
+        if (session_status()!=2){echo ("  <div class=\"alert alert-danger\"> <strong>Erreur !</strong> Identifiants non valides - veuillez réessayer !    </div>");
 
+        }
     }
 ?>
