@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 
 <head>
@@ -9,20 +9,17 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Escape-Game </title>
 </head>
-
+<style> body{background-color:#0b485b; overflow:hidden;}</style>
 <body>
+
     <div class="bs-example">
         <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
             <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+         
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="J1/images/alessio-ferretti-747215-unsplash.jpg" width="100%" class="img-responsive"
+                    <img src="images/img1titre.jpg" width="100%" class="img-responsive"
                         alt="Là où rêvent nos pères">
                 </div>
 
