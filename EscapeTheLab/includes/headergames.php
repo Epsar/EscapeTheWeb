@@ -25,11 +25,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="../logout.php">Abandonner</a></li>
                     </ul>
-<?php $time= 100 ?>
+<?php include_once("connectbdd.php");include_once("fetchlevelitems.php");  ?>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <p class="navbar-text">Il vous reste <span id="timer">
-                                   <?= " $time" ?>
+                                   <?php fetchtimer($bdd);?>
                                 </span> secondes pour résoudre cette énigme</p>
                         </li>
                     </ul>

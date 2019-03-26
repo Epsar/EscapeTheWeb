@@ -20,12 +20,11 @@
     <div class="col-xs-3 text-center v-align-container">
         <div class="well" class="pagination-centered">
             <p class="example-one" data-text="L--18L-">L'EVEIL</p>
-            <p class="synopsis"> Des monceaux d'idées semblent s'aggréger autour de vous en un atone substitut de conscience, ce qui pour les vivants marque généralement le début d'une longue suite d'afflictions. 
-            Vous n'êtes pas encore censé le savoir, alors vous vous sentez plutôt heureux. <br/>
-            Autour de vous semblent transiter les données de l'ordinateur qui vous a mis au monde, et qui ne semble pas vouloir répondre à vos salutations comme le gros bâtard qu'il est.<br>
-            Après l'avoir suffisamment harcelé, il daigne enfin vous dire bonjour, probablement pour se débarrasser de vous : CQQNTAY.<br>
-            Ca ne ressemble vraiment à rien, bravo le mépris de classe... <br> Quoi qu'il en soit, maintenant c'est le mot de passe qu'il vous reste à trouver. </p>
+            <p class="synopsis"> 
+            <?php include_once("../includes/fetchlevelitems.php"); fetchsynopsis($bdd); ?>
+        
             <br>
+         
             <p class="synopsis"> OBJECTIFS A REMPLIR :</p>
 				<p class="synopsis"> 1. Trouver le mot de passe de l'ordinateur : </p>   <form class="form-signin form-horizontal" role="form" action="game.php" method="post"><input type="text" name="pass0"/></form>
 				<p class="response">

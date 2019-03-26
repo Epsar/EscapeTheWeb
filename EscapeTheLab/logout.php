@@ -38,7 +38,12 @@
 
         <section class="row row2">
             <div class="col-xs-4 col-sm-3 col-md-6">
-                <p class="text-center annonce"> Vous êtes arrivé au niveau :
+                <p class="text-center annonce"> 
+                    
+                <?php include_once("includes/fetchlevelitems.php"); fetchmessage($bdd);?><br/>
+                
+                <br/>
+                Vous êtes arrivé au niveau :
                     <?php 
                     include_once("includes/connectbdd.php");                    
                     $yourlevel= $bdd -> prepare("SELECT niveau FROM SESSION WHERE id = ?");
@@ -47,7 +52,7 @@
                     {
                         $level =($ligne['niveau']);
                     }
-                    print "$level"; 
+                    print ($level+1); 
                     ?>
                 </p>
                 <p class="text-center annonce"> Votre partie a duré :
@@ -57,7 +62,7 @@
                     $yourtime ->execute(array($duree,$_SESSION['_id']));
                     if ( $duree>60) 
                     {
-                        $dureemin= intdiv ($duree , 60 );
+                        $dureemin= intdiv($duree,60);
                         $dureesec = $duree-60*$dureemin;
                         print "$dureemin minutes $dureesec secondes";
                     } 

@@ -17,7 +17,7 @@
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                 <select name="gamename" class="form-control" required>
                     <option disabled value="J0" selected="selected"> Jeu à administrer</option>
-                    <option value="J1"> Là où rêvent nos pères</option>
+                    <option value="J1"> EscapeTheLab!!</option>
                     <option disabled value="J2"> Jeu 2 </option>
                     <option disabled value="J3"> Jeu 3</option>
                 </select></div>
