@@ -4,4 +4,5 @@ try {
 } catch (Exception $e) {
     die('Erreur fatale :' . $e->getMessage());
 } 
+?>
  

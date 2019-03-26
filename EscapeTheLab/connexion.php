@@ -15,20 +15,20 @@
     <title>BelainGames - Connexion</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $("#flip").click(function() {
-                $("#panel").slideDown("slow");
-                $("#panel2").slideUp("slow");
+    $(document).ready(function() {
+        $("#flip").click(function() {
+            $("#panel").slideDown("slow");
+            $("#panel2").slideUp("slow");
 
-            });
         });
+    });
 
-        $(document).ready(function() {
-            $("#flip2").click(function() {
-                $("#panel2").slideDown("slow");
-                $("#panel").slideUp("slow");
-            });
+    $(document).ready(function() {
+        $("#flip2").click(function() {
+            $("#panel2").slideDown("slow");
+            $("#panel").slideUp("slow");
         });
+    });
     </script>
 
 </head>
@@ -36,21 +36,22 @@
 <body>
 
     <style>
-        body {
-            background-image: url(images/fdlogin2.jpg);
-            opacity: 0.85;
-        }
+    body {
+        background-image: url(images/fdlogin2.jpg);
+        opacity: 0.85;
+    }
 
-        .navbar {
-            border-bottom: 1px ridge #c1c9d0;
-        }
+    .navbar {
+        border-bottom: 1px ridge #c1c9d0;
+    }
     </style>
     <div class="container">
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-target">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse-target">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -81,7 +82,7 @@
         <div id="flip2">
             <h2 class="text-center">Démarrer une session</h2> <br>
         </div>
-        
+
         <div id="panel2">
 
             <div class="well" class="pagination-centered">
@@ -91,13 +92,15 @@
                 <form class="form-signin form-horizontal" role="form" action="connexion.php" method="post">
                     <div class="form-group">
                         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                            <input type="text" name="login2" class="form-control" placeholder="Entrez votre nom d'équipe ! " required autofocus>
+                            <input type="text" name="login2" class="form-control"
+                                placeholder="Entrez votre nom d'équipe ! " required autofocus>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                            <input type="password" name="password2" class="form-control" placeholder="Entrez un code secret" required>
+                            <input type="password" name="password2" class="form-control"
+                                placeholder="Entrez un code secret" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -131,19 +134,21 @@
         <div class="well" class="pagination-centered">
 
 
-    
+
 
             <div class="progress"></div>
             <form class="form-signin form-horizontal" role="form" action="connexion.php" method="post">
                 <div class="form-group">
                     <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                        <input type="text" name="login" class="form-control" placeholder="Entrez votre nom d'équipe ! " required autofocus>
+                        <input type="text" name="login" class="form-control" placeholder="Entrez votre nom d'équipe ! "
+                            required autofocus>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                        <input type="password" name="password" class="form-control" placeholder="Entrez un code secret" required>
+                        <input type="password" name="password" class="form-control" placeholder="Entrez un code secret"
+                            required>
                     </div>
                 </div>
 
@@ -161,8 +166,8 @@
 
 
 
-   <?php include_once("includes/footer.php"); ?>
+    <?php include_once("includes/footer.php"); ?>
 
 </body>
 
-</html> 
+</html>
