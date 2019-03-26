@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
 
         <script src="../includes/chat.js"></script>
