@@ -20,7 +20,7 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="images/img1titre.jpg" width="100%" class="img-responsive"
-                        alt="Là où rêvent nos pères">
+                        alt="Escapethelab">
                 </div>
 
             </div>
@@ -59,7 +59,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="connexion.php">Rejoindre une partie</a></li>
-                                <li><a href="admin.php">Accès administrateur</a></li>
+                                <li><a href="admin.php">Qui sommes nous ??</a></li>
                             </ul>
 
                         </li>

@@ -14,14 +14,33 @@
 </head>
 
 <body>
+<script language="javascript">
+    function changeImage() {
 
+        if (document.getElementById("imgClickAndChange").src == "images/c7.jpg") 
+        {
+            document.getElementById("imgClickAndChange").src = "images/c6.jpg";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "images/c7.jpg";
+        }
+    }
+</script>
+<div class="col-xm-4 text-center v-align-container">
     <div class="well" class="pagination-centered">
 
-        <p class="example-one" data-text="NIVEAU -2-">NIVEAU 1</p>
+        <p class="example-one" data-text="NIVEAU -2-">NIVEAU 2</p>
 
 
     </div>
+</div>
+<div class="col-xm-8 text-center ">
+	<div class="well" class="pagination-centered">
+<img src="images/c7.jpg" width="50%" id="imgClickAndChange" onclick="changeImage()"/>
 
+</div>
+</div>
 
     <!-- jQuery -->
     <script src="../lib/jquery/jquery.min.js"></script>

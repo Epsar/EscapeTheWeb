@@ -1,124 +1,123 @@
 body {
-  background-image: url(../images/c4.jpg);
+  background-image: url(../images/c6.jpg);
+  background-repeat:no-repeat;
+  background-color:black;
   background-size: 100%;
 }
+img{border: 5px solid black;}
 .example-one {
   font-size: 5vw;
-  color: white;
-  text-shadow: 5px 5px 10px purple; 
+  color: rgb(245, 238, 216);
+  text-shadow: 5px 5px 5px orange; 
   position: relative;
 }
 @keyframes example-one-anim-1 {
   0% {
-    clip: rect(62px, 450px, 65px, 0);
+    clip: rect(62px, 1500px, 65px, 0);
   }
   5.88235% {
-    clip: rect(63px, 450px, 65px, 0);
+    clip: rect(63px, 1500px, 65px, 0);
   }
   11.76471% {
-    clip: rect(39px, 450px, 97px, 0);
+    clip: rect(39px, 1500px, 97px, 0);
   }
   17.64706% {
-    clip: rect(89px, 450px, 10px, 0);
+    clip: rect(89px, 1500px, 10px, 0);
   }
   23.52941% {
-    clip: rect(57px, 450px, 12px, 0);
+    clip: rect(57px, 1500px, 12px, 0);
   }
   29.41176% {
-    clip: rect(88px, 450px, 24px, 0);
+    clip: rect(88px, 1500px, 24px, 0);
   }
   35.29412% {
-    clip: rect(42px, 450px, 54px, 0);
+    clip: rect(42px, 1500px, 54px, 0);
   }
   41.17647% {
-    clip: rect(95px, 450px, 90px, 0);
+    clip: rect(95px, 100%, 90px, 0);
   }
   47.05882% {
-    clip: rect(59px, 450px, 115px, 0);
+    clip: rect(59px, 100%, 115px, 0);
   }
   52.94118% {
-    clip: rect(70px, 450px, 34px, 0);
+    clip: rect(70px, 100%, 34px, 0);
   }
   58.82353% {
-    clip: rect(115px, 450px, 90px, 0);
+    clip: rect(115px, 100%, 90px, 0);
   }
   64.70588% {
-    clip: rect(107px, 450px, 1px, 0);
+    clip: rect(107px, 100%, 1px, 0);
   }
   70.58824% {
-    clip: rect(94px, 450px, 86px, 0);
+    clip: rect(94px, 100%, 86px, 0);
   }
   76.47059% {
-    clip: rect(14px, 450px, 91px, 0);
+    clip: rect(14px, 100%, 91px, 0);
   }
   82.35294% {
-    clip: rect(83px, 450px, 107px, 0);
+    clip: rect(83px, 100%, 107px, 0);
   }
   88.23529% {
-    clip: rect(10px, 450px, 60px, 0);
+    clip: rect(10px, 100%, 60px, 0);
   }
   94.11765% {
-    clip: rect(68px, 450px, 25px, 0);
+    clip: rect(68px, 100%, 25px, 0);
   }
-  100% {
-    clip: rect(108px, 450px, 25px, 0);
-  }
+ 
 }
 @keyframes example-one-anim-2 {
   0% {
-    clip: rect(68px, 450px, 44px, 0);
+    clip: rect(68px, 1500px, 44px, 0);
   }
   5.88235% {
-    clip: rect(3px, 450px, 25px, 0);
+    clip: rect(3px, 1500px, 25px, 0);
   }
   11.76471% {
-    clip: rect(20px, 450px, 38px, 0);
+    clip: rect(20px, 1500px, 38px, 0);
   }
   17.64706% {
-    clip: rect(107px, 450px, 82px, 0);
+    clip: rect(107px, 1500px, 82px, 0);
   }
   23.52941% {
-    clip: rect(29px, 450px, 99px, 0);
+    clip: rect(29px, 1500px, 99px, 0);
   }
   29.41176% {
-    clip: rect(30px, 450px, 68px, 0);
+    clip: rect(30px, 1500px, 68px, 0);
   }
   35.29412% {
-    clip: rect(6px, 450px, 101px, 0);
+    clip: rect(6px, 1500px, 101px, 0);
   }
   41.17647% {
-    clip: rect(104px, 450px, 59px, 0);
+    clip: rect(104px, 1500px, 59px, 0);
   }
   47.05882% {
-    clip: rect(21px, 450px, 39px, 0);
+    clip: rect(21px, 1500px, 39px, 0);
   }
   52.94118% {
-    clip: rect(23px, 450px, 24px, 0);
+    clip: rect(23px, 1500px, 24px, 0);
   }
   58.82353% {
-    clip: rect(48px, 450px, 4px, 0);
+    clip: rect(48px, 1500px, 4px, 0);
   }
   64.70588% {
-    clip: rect(43px, 450px, 55px, 0);
+    clip: rect(43px, 1500px, 55px, 0);
   }
   70.58824% {
-    clip: rect(40px, 450px, 6px, 0);
+    clip: rect(40px, 1500px, 6px, 0);
   }
   76.47059% {
-    clip: rect(85px, 450px, 50px, 0);
+    clip: rect(85px, 1500px, 50px, 0);
   }
   82.35294% {
-    clip: rect(83px, 450px, 86px, 0);
+    clip: rect(83px, 1500px, 86px, 0);
   }
   88.23529% {
-    clip: rect(27px, 450px, 100px, 0);
+    clip: rect(27px, 1500px, 100px, 0);
   }
   94.11765% {
-    clip: rect(89px, 450px, 48px, 0);
+    clip: rect(89px, 1500px, 48px, 0);
   }
-  100% {
-    clip: rect(44px, 450px, 6px, 0);
-  }
+  
 }
 .example-one:before, .example-one:after {
   content: attr(data-text);
@@ -126,16 +125,18 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: crimson;
+  background: orange;
   clip: rect(0, 0, 0, 0);
 }
 .example-one:after {
   left: 2px;
-  text-shadow: -1px 0 red;
+  text-shadow: -1px 0 yellow;
   animation: example-one-anim-1 2s infinite linear alternate-reverse;
 }
 .example-one:before {
   left: -2px;
-  text-shadow: 2px 0 blue;
+  text-shadow: 2px 0 greenyellow;
   animation: example-one-anim-2 3s infinite linear alternate-reverse;
 }
+.well{background-color:rgba(27, 21, 11, 0.44);
+border: 1px ridge black;}
