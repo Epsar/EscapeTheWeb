@@ -12,8 +12,32 @@ function ecrireMSGmj()
 
 }
 
-function afficheMSG()
+function afficheMSG($pdo)
 {
+    $requete = "SELECT * FROM chat ";
+    $table = $pdo -> query($requete);
+    while($ligne = $table -> fetch())
+    {
+        $ID = $ligne["IDsession"];
+        $heure=date("h:i:sa");
+        $msgEquipe=$ligne["msgEQUIPE"];
+        echo   "<li class=\"left clearfix\">
+                    <span class=\"chat-img pull-left\">
+                        <img src=\"http://placehold.it/50/55C1E7/fff&text=JS\" alt=\"User Avatar\" class=\"img-circle\" />
+                    </span>
+                    <div class=\"chat-body clearfix\">
+                        <div class=\"header\">
+                            <strong class=\"primary-font\">Session $ID</strong>
+                            <small class=\"pull-right text-muted\">
+                                <span class=\"glyphicon glyphicon-envelope\"></span>$heure
+                            </small>
+                        </div>
+                        <p>
+                            $msgEquipe
+                        </p>
+                    </div>
+                </li>";
+    }
 
 
 }

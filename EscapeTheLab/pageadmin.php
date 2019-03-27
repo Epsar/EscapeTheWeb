@@ -101,6 +101,7 @@
                             <ul class="chat">
                                 <?php
                                     include('includes/chat.php');
+                                    afficheMSG($bdd);
 
                                 ?>
 
