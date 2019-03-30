@@ -6,9 +6,13 @@ function ecrireMSGjoueur()
 
 }
 
-function ecrireMSGmj()
+function ecrireMSGmj($pdo)
 {
-
+    if ( isset($_POST['msgMJ']))
+    {
+        $yourmsg = $pdo -> prepare("UPDATE CHAT SET msgMJ = ? WHERE IDsession = 3");
+        $yourmsg ->execute(array($_POST['msgMJ']));
+    }
 
 }
 
@@ -21,6 +25,7 @@ function afficheMSG($pdo)
         $ID = $ligne["IDsession"];
         $heure=date("h:i:sa");
         $msgEquipe=$ligne["msgEQUIPE"];
+
         echo   "<li class=\"left clearfix\">
                     <span class=\"chat-img pull-left\">
                         <img src=\"http://placehold.it/50/55C1E7/fff&text=JS\" alt=\"User Avatar\" class=\"img-circle\" />
@@ -40,6 +45,11 @@ function afficheMSG($pdo)
     }
 
 
+}
+
+function popup()
+{
+    
 }
 
 ?>
