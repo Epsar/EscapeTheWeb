@@ -13,7 +13,7 @@
                             <div class=\"bs-example\">
                                 <div class=\"panel-group\" id=\"accordion\">";
 
-            $requete2 = "SELECT * FROM chat where msgMJ = '0'";
+            $requete2 = "SELECT * FROM chat where IDsession=(SELECT ID from session where duree=0) AND msgMJ='0'";
             $table = $pdo -> query($requete2);
             $incrementation = 1;
             while($ligne = $table -> fetch())
@@ -39,19 +39,22 @@
                                     </p>
                                     <form action=\"pageadmin.php\" method=\"post\">
                                     <div class=\"input-group\">
-                                        <input id=\"btn-input\" type=\"text\" name=\"msgMJ\" class=\"form-control input-sm\"
+                                        <input id=\"btn-input\" type=\"text\" name=\"msgMJ$incrementation\" class=\"form-control input-sm\"
                                             placeholder=\"Type your message here...\" />
                                         <span class=\"input-group-btn\">
                                             <button type=\"submit\" class=\"btn btn-warning btn-sm\" id=\"btn-chat\">
                                                 Send
                                             </button>
                                         </span>
+                                        <?php
+                                        ecrireMSGmj($pdo,$IDchat,$incrementation);
+                                        ?>
                                     </div>
                                 </form>
                                 </div>
                             </div>
                         </div>";
-                ecrireMSGmj($pdo,$IDchat);
+                
                 $incrementation= $incrementation+1;
 
         
@@ -70,13 +73,13 @@ function ecrireMSGjoueur()
 
 }
 
-function ecrireMSGmj($pdo,$IDchat)
+function ecrireMSGmj($pdo,$IDchat,$incrementation)
 {
-    if ( isset($_POST["msgMJ"]))
+    $msgRetour="msgMJ".$incrementation;
+    if ( isset($_post[$msgRetour]))
     {
         $yourmsg = $pdo -> prepare("UPDATE CHAT SET msgMJ = ? WHERE IDsession = $IDchat");
-        $yourmsg ->execute(array($_POST['msgMJ']));
-        $_POST["msgMJ"]=null;
+        $yourmsg ->execute(array($_post[$msgRetour]));
     }
 
 }
