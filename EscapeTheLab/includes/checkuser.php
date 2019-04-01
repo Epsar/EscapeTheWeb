@@ -15,6 +15,7 @@
                 $_SESSION['_gamename']= $_POST['gamename'];
                 $_SESSION['_connexiontime']=time();
                 $_SESSION['level']=0;
+                
                 if ($tuple["EstMJ"]==0)
                 {               
                     require_once("includes/opensession.php");

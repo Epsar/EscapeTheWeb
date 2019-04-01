@@ -77,6 +77,7 @@
                 <?php
                     include("includes/chat.php");
                     afficheMSG($bdd);
+
                 ?>
             </div>
             <br /><br /><br />
@@ -85,7 +86,7 @@
         
 
 
-
+        
         <?php 
                 // include_once("includes/authadmin.php");
                 include_once("includes/footer.php"); 
